@@ -25,5 +25,10 @@ function renderCartItem(item) {
 
     // Конец решения задания №3.1.
 
+    
+    let itemCountText = "";
+    let sum = product.count * product.price;
+    itemCountText = itemCountText + product.count + ` × ` + product.price + ` ₽ = ` + sum + ` ₽`;
+    
     return `<div class="cart-item"><div>${product.title}</div><div>${itemCountText}</div></div>`;
 }
